@@ -1,0 +1,207 @@
+.page-footer {
+@extend %grey-section;
+}
+.page-footer__container {
+    @extend %container;
+    display: flex;
+    @media screen and (max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    padding: 0 15px;
+    margin: 0 auto;
+    // max-height: 252px;
+}
+
+.page-footer__contacts {
+    @media screen and (max-width:1199px) {
+            text-align: center;
+        }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-left: 60px;
+        }
+    @media screen and (min-width:1200px) {
+        padding-right: 70px;
+         }
+    padding: 60px 0;
+    margin: 0 ;
+}
+
+/* лого */
+.page-footer__logo {
+    margin: 0;
+}
+.logo__studio--inverse {
+    font-family: $text-logo-font;
+    font-style: normal;
+    font-weight: 700;
+    @media screen and (min-width:1200px) {
+            font-size: 26px;
+            line-height: 1.2;
+        }
+    font-size: 24px;
+    line-height: 1.17;
+    color: $secondary-color;
+}
+
+.page-footer__list {
+    
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+/* контакти */
+.page-footer__adress {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $secondary-color;
+    text-decoration: none;
+}
+.page-footer__list-item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+            margin-bottom: 9px;
+        }
+}
+
+
+.page-footer__contacts-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.page-footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width:767px){
+            width: 100%;
+        }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+            margin-left: 165px;
+            padding-top: 65px;
+            max-width: 206px;
+        }
+    @media screen and (min-width:1200px) {
+        padding: 72px 93px 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+}
+
+.page-footer__title {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondary-color;
+    text-transform: uppercase;
+}
+
+.page-footer__social-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.page-footer__social-list-item {
+    @extend %list;
+}
+.page-footer__social-list-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.page-footer__icon-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $secondary-color;
+}
+
+.page-footer__form {
+    @media screen and (max-width:1200px) {
+        width: 100%;
+    }
+    @media screen and (min-width:1200px) {
+        min-width: 570px;
+            padding-top: 72px;
+            padding-bottom: 94px;
+            align-items: flex-start;
+        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    margin: 0;
+}
+.page-footer__mail {
+    width: 100%;
+}
+.page-footer__thumb {
+    width: 100%;
+    @media screen and (max-width:1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    display: flex;
+    justify-content: center;
+}
+
+.page-footer__input {
+    width: 100%;
+    height: 50px;
+    @media screen and (min-width:1200px) {
+            max-width: 358px;
+            margin-bottom: 0;
+        }
+    max-width: 450px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__hero-button {
+    align-items: center;
+    @media screen and (min-width:1200px) {
+            margin-left: 12px;
+        }
+    margin: 0;
+    max-width: 200px;
+    padding: 10px 28px;
+    background: $accent-color;
+
+    &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/icon-telegram.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+}

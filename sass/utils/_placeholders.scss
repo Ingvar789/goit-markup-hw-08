@@ -1,0 +1,36 @@
+%list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+%container {
+    min-width: 290px;
+    max-width: 1200px;
+    margin: 0 auto;
+@media screen and (min-width: 290px) and (max-width: 767px) {
+    padding: 60px 15px;
+    }
+@media screen and (min-width: 768px)and (max-width: 1199px) {
+    padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+    padding: 94px 15px;
+}
+}
+%title {
+    color: $text-title-color;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+%grey-section {
+    color: $secondary-color;
+    background-color: #2f303a;
+}
+/*підписи для "чим ми займаємося" і "нашої команди"*/
+%section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,31 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/body";
+@import "./utils/placeholders";
+/*header*/
+@import "./components/page-header";
+/*mobile-menu*/
+@import "./components/mobile-menu/mobile-box";
+@import "./components/mobile-menu/mobile-menu";
+/*studio hero*/
+@import "./components/studio-page/section-hero";
+/*studio feature*/
+@import "./components/studio-page/section-feature";
+/*studio our work*/
+@import "./components/studio-page/section-our-work";
+/*studio our team*/
+@import "./components/studio-page/section-our-team";
+/*studio regular customers*/
+@import "./components/studio-page/section-regular-customers";
+/*modal box*/
+@import "./components/modal/modal-box";
+/*modal form*/
+@import "./components/modal/modal-form";
+/*modal checkbox*/
+@import "./components/modal/modal-checkbox";
+/*filter buttons*/
+@import "./components/portfolio-page/filter-buttons";
+/*portfolio list*/
+@import "./components/portfolio-page/portfolio-list";
+/*footer*/
+@import "./components/page-footer";

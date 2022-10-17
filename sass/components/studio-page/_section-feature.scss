@@ -1,0 +1,99 @@
+.feature {
+    @extend %container;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
+}
+.feature__list {
+    @extend %list;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+     @media screen and (min-width: 1200px) {
+         display: flex;
+        }
+}
+.feature__item {
+    width: 100%;
+@media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+    }
+
+@media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
+    &::before {
+        display: block;
+        content: '';
+        height: 120px;
+    }
+}
+
+.feature__title {
+    @extend %title;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.feature__description {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.icon-antena {
+    &::before {
+            margin-bottom: 30px;
+            background: $background-color;
+            border-radius: 4px;
+            background-image: url(../images/icon-antena.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+
+.icon-clock {
+    &::before {
+            margin-bottom: 30px;
+            background: $background-color;
+            border-radius: 4px;
+            background-image: url(../images/icon-clock.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+
+.icon-computer {
+    &::before {
+            margin-bottom: 30px;
+            background: $background-color;
+            border-radius: 4px;
+            background-image: url(../images/icon-computer.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+
+.icon-astronaut {
+    &::before {
+            margin-bottom: 30px;
+            background: $background-color;
+            border-radius: 4px;
+            background-image: url(../images/icon-astronaut.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}

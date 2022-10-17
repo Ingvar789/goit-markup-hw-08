@@ -1,0 +1,14 @@
+body {
+    font-family: $text-main-font;
+    background-color: $secondary-color;
+    color: $text-main-color;
+    letter-spacing: 0.03em;
+}
+body.menu-open {
+    overflow: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
