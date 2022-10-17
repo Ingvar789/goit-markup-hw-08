@@ -5,7 +5,8 @@
     modal: document.querySelector("[data-modal]"),
   };
   const toggleModal = () =>
-   {
+  {
+    document.body.classList.toggle("modal-open");
     refs.modal.classList.toggle("is-hidden");
   }
   refs.openModalBtn.addEventListener("click", toggleModal);
