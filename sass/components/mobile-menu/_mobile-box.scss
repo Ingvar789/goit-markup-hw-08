@@ -8,7 +8,7 @@
         background-color: $secondary-color;
         z-index: 100;
 
-        transform: translateY(-120%);
+        transform: translateY(-200%);
         transition: transform 250ms $timing-function;
     }
 .menu-container.is-open {
@@ -37,7 +37,10 @@
 }
 
 .mobile-menu {
-    @extend %container;
+    // @extend %container;
+    min-width: 290px;
+    max-width: 767px;
+    margin: 0 auto;
     padding: 0 40px 48px 40px;
     margin: 0;
     list-style: none;
