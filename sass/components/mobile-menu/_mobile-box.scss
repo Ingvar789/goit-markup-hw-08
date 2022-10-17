@@ -8,7 +8,7 @@
         background-color: $secondary-color;
         z-index: 100;
 
-        transform: translateY(-200%);
+        transform: translateY(-250%);
         transition: transform 250ms $timing-function;
     }
 .menu-container.is-open {
