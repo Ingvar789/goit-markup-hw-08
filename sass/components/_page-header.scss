@@ -3,6 +3,7 @@
   background-color: $secondary-color;
 }
 .header__container {
+    @extend %container;
     height: 60px;
     display: flex;
     align-items: center;
@@ -52,20 +53,34 @@
     color: black;
 }
 .menu-toggle {
-        &:focus {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+    background-color: transparent;
+    border-style: none;
+    transition: color 250ms $timing-function;
+    &:hover {
         color: $accent-color;
-        }
-        &:hover {
+        cursor: pointer;
+    }
+    &:focus {
         color: $accent-color;
-        }
+        cursor: pointer;
+    }
 }
-
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
 }
-
+.icon-menu-open {
+   width: 24px;
+   height: 16px; 
+}
+.icon-menu-close {
+    width: 19px;
+    height: 19px;
+}
 .page-header__menu {
     display: flex;
     width: 100%;
@@ -104,7 +119,6 @@
         color: $accent-color;
         z-index: 2;
     }
-
     &:focus {
         color: $accent-color;
         z-index: 2;
@@ -113,7 +127,6 @@
 .page-header__button--current {
     color: $accent-color;
 }
-
 .page-header__nav--line{
     &::after {
             content: '';
@@ -126,7 +139,6 @@
             border-radius: 2px;
         }
 }
-
 /* контакти  */
 .page-header__contacts {
     @extend %list;
@@ -163,15 +175,12 @@
     letter-spacing: 0.02em;
     transition: color 250ms $timing-function;
 }
-
 .contacts-link--mail {
     align-items: stretch;
 }
-
 .contacts-link--phone {
     align-items: center;
 }
-
 .contacts-link{
     &:hover{
         color: $accent-color;
@@ -180,14 +189,12 @@
         color: $accent-color;
     }
 }
-
 .contacts-link__icon-envelope {
     height: 12px;
     width: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
-
 .contacts-link__icon-phone {
     height: 16px;
     width: 10px;

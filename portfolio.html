@@ -24,10 +24,9 @@
         </a>
 
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg fill="currentColor" width="24" height="16" viewBox="0 0 24 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+            <svg class="icon-menu-open">
+                <use href="./images/sprite.svg#icon-menu-open">
+                </use>
             </svg>
         </button>
 
@@ -88,16 +87,12 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img 
-                        srcset="
-                            images/desctop/portfolio-case1-370.jpg 370w,
-                            images/desctop/portfolio-case1-370@2x.jpg 740w,
-                            images/tablet/portfolio-case1-354.jpg 354w,
-                            images/tablet/portfolio-case1-354@2x.jpg 708w,
-                            images/mobile/portfolio-case1-450.jpg 450w,
-                            images/mobile/portfolio-case1-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case1-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="ноутбук з заставкою">
+                        <picture>
+                            <source srcset="images/portfolio-case1-450.jpg 1x, images/portfolio-case1-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case1-354.jpg 1x, images/portfolio-case1-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case1-370.jpg 1x, images/portfolio-case1-370@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                            <img src="images/desctop/portfolio-case1-370.jpg" alt="ноутбук з заставкою">
+                            </picture>
                             <div class="portfolio-list__overlay">
                                 <p class="portfolio-list__overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним 
@@ -106,7 +101,7 @@
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                     </div>
-                    <div class="portfolio-list__description portfolio-list__description-tablet">
+                    <div class="portfolio-list__description">
                         <h3 class="portfolio-list__title">Технокряк</h3>
                         <p class="portfolio-list__subtitle">Веб-сайт</p>
                     </div>
@@ -116,16 +111,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img
-                        srcset="
-                            images/desctop/portfolio-case2-370.jpg 370w,
-                            images/desctop/portfolio-case2-370@2x.jpg 740w,
-                            images/tablet/portfolio-case2-354.jpg 354w,
-                            images/tablet/portfolio-case2-354@2x.jpg 708w,
-                            images/mobile/portfolio-case2-450.jpg 450w,
-                            images/mobile/portfolio-case2-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case2-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="баскетболісти грають">
+                        <picture>
+                            <source srcset="images/portfolio-case2-450.jpg 1x, images/portfolio-case2-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case2-354.jpg 1x, images/portfolio-case2-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case2-370.jpg 1x, images/portfolio-case2-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case2-370.jpg" alt="баскетболісти грають">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -144,16 +136,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img 
-                        srcset="
-                            images/desctop/portfolio-case3-370.jpg 370w,
-                            images/desctop/portfolio-case3-370@2x.jpg 740w,
-                            images/tablet/portfolio-case3-354.jpg 354w,
-                            images/tablet/portfolio-case3-354@2x.jpg 708w,
-                            images/mobile/portfolio-case3-450.jpg 450w,
-                            images/mobile/portfolio-case3-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case3-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="ресторан рибної їжі">
+                        <picture>
+                            <source srcset="images/portfolio-case3-450.jpg 1x, images/portfolio-case3-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case3-354.jpg 1x, images/portfolio-case3-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case3-370.jpg 1x, images/portfolio-case3-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case3-370.jpg" alt="ресторан рибної їжі">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -172,16 +161,12 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img
-                         srcset="
-                            images/desctop/portfolio-case4-370.jpg 370w,
-                            images/desctop/portfolio-case4-370@2x.jpg 740w,
-                            images/tablet/portfolio-case4-354.jpg 354w,
-                            images/tablet/portfolio-case4-354@2x.jpg 708w,
-                            images/mobile/portfolio-case4-450.jpg 450w,
-                            images/mobile/portfolio-case4-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case4-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="навушники">
+                         <picture>
+                            <source srcset="images/portfolio-case4-450.jpg 1x, images/portfolio-case4-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case4-354.jpg 1x, images/portfolio-case4-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case4-370.jpg 1x, images/portfolio-case4-370@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                            <img src="images/desctop/portfolio-case4-370.jpg" alt="навушники">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -200,16 +185,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img
-                         srcset="
-                            images/desctop/portfolio-case5-370.jpg 370w,
-                            images/desctop/portfolio-case5-370@2x.jpg 740w,
-                            images/tablet/portfolio-case5-354.jpg 354w,
-                            images/tablet/portfolio-case5-354@2x.jpg 708w,
-                            images/mobile/portfolio-case5-450.jpg 450w,
-                            images/mobile/portfolio-case5-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case5-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="дві коробки">
+                        <picture>
+                            <source srcset="images/portfolio-case5-450.jpg 1x, images/portfolio-case5-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case5-354.jpg 1x, images/portfolio-case5-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case5-370.jpg 1x, images/portfolio-case5-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case5-370.jpg" alt="дві коробки">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -228,16 +210,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img 
-                       srcset="
-                            images/desctop/portfolio-case6-370.jpg 370w,
-                            images/desctop/portfolio-case6-370@2x.jpg 740w,
-                            images/tablet/portfolio-case6-354.jpg 354w,
-                            images/tablet/portfolio-case6-354@2x.jpg 708w,
-                            images/mobile/portfolio-case6-450.jpg 450w,
-                            images/mobile/portfolio-case6-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case6-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="монітор стоїть">
+                        <picture>
+                            <source srcset="images/portfolio-case6-450.jpg 1x, images/portfolio-case6-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case6-354.jpg 1x, images/portfolio-case6-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case6-370.jpg 1x, images/portfolio-case6-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case6-370.jpg" alt="монітор стоїть">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -256,16 +235,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img
-                         srcset="
-                            images/desctop/portfolio-case7-370.jpg 370w,
-                            images/desctop/portfolio-case7-370@2x.jpg 740w,
-                            images/tablet/portfolio-case7-354.jpg 354w,
-                            images/tablet/portfolio-case7-354@2x.jpg 708w,
-                            images/mobile/portfolio-case7-450.jpg 450w,
-                            images/mobile/portfolio-case7-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case7-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="книга">
+                        <picture>
+                            <source srcset="images/portfolio-case7-450.jpg 1x, images/portfolio-case7-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case7-354.jpg 1x, images/portfolio-case7-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case7-370.jpg 1x, images/portfolio-case7-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case7-370.jpg" alt="книга">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -284,16 +260,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img
-                         srcset="
-                            images/desctop/portfolio-case8-370.jpg 370w,
-                            images/desctop/portfolio-case8-370@2x.jpg 740w,,
-                            images/tablet/portfolio-case8-354.jpg 354w,
-                            images/tablet/portfolio-case8-354@2x.jpg 708w,
-                            images/mobile/portfolio-case8-450.jpg 450w,
-                            images/mobile/portfolio-case8-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case8-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="бірка фірми lab">
+                        <picture>
+                            <source srcset="images/portfolio-case8-450.jpg 1x, images/portfolio-case8-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case8-354.jpg 1x, images/portfolio-case8-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case8-370.jpg 1x, images/portfolio-case8-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case8-370.jpg" alt="бірка фірми lab">
+                            </picture>
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -312,17 +285,13 @@
             <li class="portfolio-list__item">
                 <a class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img srcset="
-                            images/desctop/portfolio-case9-370.jpg 370w,
-                            images/desctop/portfolio-case9-370@2x.jpg 740w,
-                            images/tablet/portfolio-case9-354.jpg 354w,
-                            images/tablet/portfolio-case9-354@2x.jpg 708w,
-                            images/mobile/portfolio-case9-450.jpg 450w,
-                            images/mobile/portfolio-case9-450@2x.jpg 900w
-                            " src="images/desctop/portfolio-case9-370.jpg" 
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-                              alt="Руки на клавіатурі ноутбука друкують"
-                            class="our-team__image">
+                        <picture>
+                            <source srcset="images/portfolio-case9-450.jpg 1x, images/portfolio-case9-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpg">
+                            <source srcset="images/portfolio-case9-354.jpg 1x, images/portfolio-case9-354@2x.jpg 2x" media="(min-width: 768px) and (max-width:1199px)" type="image/jpg">
+                            <source srcset="images/portfolio-case9-370.jpg 1x, images/portfolio-case9-370@2x.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpg">
+                            <img src="images/desctop/portfolio-case9-370.jpg"  alt="Руки на клавіатурі ноутбука друкують"> 
+                              </picture> 
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним
@@ -418,10 +387,9 @@
     <!--mobile menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="19" height="19">
-                <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
+            <svg class="icon-menu-close">
+                <use href="./images/sprite.svg#icon-menu-close">
+                </use>
             </svg>
         </button>
         <div class="mobile-menu">

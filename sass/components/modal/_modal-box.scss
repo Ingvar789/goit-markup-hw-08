@@ -20,8 +20,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    @media screen and (max-height: 600px) {
-            top: 50vw;
+    @media screen and (max-height: 608px) {
+            top: 55vh;
             left: 50vw;
         }
     @media screen and (max-width: 479px) {
