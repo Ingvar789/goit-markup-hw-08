@@ -173,30 +173,30 @@ img {
   margin: 0;
 }
 
-.page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .hero-background, .header__container {
+.page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .header__container {
   min-width: 290px;
   max-width: 1200px;
   margin: 0 auto;
 }
 @media screen and (max-width: 479px) {
-  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .hero-background, .header__container {
+  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .header__container {
     padding: 60px 15px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .hero-background, .header__container {
+  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .header__container {
     width: 480px;
     padding: 60px 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .hero-background, .header__container {
+  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .header__container {
     width: 768px;
     padding: 60px 15px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .hero-background, .header__container {
+  .page-footer__container, .portfolio, .regular-customers, .our-team__container, .our-work, .feature, .hero, .header__container {
     width: 1200px;
     padding: 94px 15px;
   }
@@ -681,42 +681,54 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1600px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1600px;
-  max-height: 600px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background-image.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero-background {
-    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/mobile-bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/mobile-bg.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/mobile-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/mobile-bg@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-background {
-    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/tablet-bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/tablet-bg.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/tablet-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/tablet-bg@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-background {
-    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/desctop-bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/desctop-bg.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/goit-markup-hw-08/images/background/desctop-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/goit-markup-hw-08/images/background/desctop-bg@2x.jpg");
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero-background {
-    background-image: url("/goit-markup-hw-08/images/background-image-@2x.jpg");
-  }
-}
 .hero {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,12 +737,24 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__inscription {

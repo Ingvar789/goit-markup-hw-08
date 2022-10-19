@@ -1,46 +1,69 @@
 .hero-background {
     @extend %grey-section;
-    @extend %container;
     display: flex;
-    align-items: center;
     max-width: 1600px;
-    max-height: 600px;
+    align-items: center;
     margin: 0 auto;
     background-color: #c4c4c4;
-    background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("/goit-markup-hw-08/images/background-image.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-
-    @media screen and (min-width: 480px)and (max-width: 767px) {
-            height: 400px;
+    @media screen and (max-width: 767px) {
+            background-image:
+                    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url("/goit-markup-hw-08/images/background/mobile-bg.jpg");
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image:
+                        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url("/goit-markup-hw-08/images/background/mobile-bg@2x.jpg");
+                }
         }
     
         @media screen and (min-width: 768px)and (max-width: 1199px) {
-            height: 400px;
+            background-image:
+                    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url("/goit-markup-hw-08/images/background/tablet-bg.jpg");
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image:
+                        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url("/goit-markup-hw-08/images/background/tablet-bg@2x.jpg");
+                }
         }
     
         @media screen and (min-width: 1200px) {
-            height: 600px;
+            background-image:
+                    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url("/goit-markup-hw-08/images/background/desctop-bg.jpg");
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                        background-image: 
+                        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url("/goit-markup-hw-08/images/background/desctop-bg@2x.jpg");
+                }
+
         }
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
 }
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx) {
-    .hero-background {
-        background-image: url("/goit-markup-hw-08/images/background-image-@2x.jpg");
-    }
- }
+
 .hero {
     @extend %container;
-    margin: 0 auto;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+    @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .hero__inscription {
     display: flex;
