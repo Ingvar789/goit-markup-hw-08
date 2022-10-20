@@ -18,7 +18,7 @@
 <!--Шапка + навігація-->
 
 <header class="page-header">
-    <div class="header__container">
+    <div class="container header__container">
         <a class="logo" href="/">
             <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
         </a>
@@ -34,9 +34,9 @@
         <div class="page-header__menu">
             <nav>
                 <ul class="page-header__nav-list">
-                    <li class="page-header__nav-item"><a href="index.html"
-                            class="page-header__button">Студія</a></li>
-                    <li class="page-header__nav-item page-header__nav--line"><a href="portfolio.html" class="page-header__button page-header__button--current">Портфоліо</a>
+                    <li class="page-header__nav-item page-header__nav--line"><a href="index.html"
+                            class="page-header__button page-header__button--current">Студія</a></li>
+                    <li class="page-header__nav-item"><a href="portfolio.html" class="page-header__button">Портфоліо</a>
                     </li>
                     <li class="page-header__nav-item"><a href="Контакти" class="page-header__button">Контакти</a></li>
                 </ul>
@@ -67,7 +67,7 @@
 <main>
 
     <!--Основні кнопки навігації-->
-
+    <div class="container">
     <section class="portfolio">
 
         <!--конпки-фільтри-->
@@ -309,80 +309,79 @@
         </ul>
 
     </section>
-
+    </div>
 </main>
 
     <!-- Футер-->
     
-    <footer class="page-footer">
-        <div class="page-footer__container">
-            <div class="page-footer__contacts">
-                <a class="logo page-footer__logo" href="/">
-                    <span class="logo__web">Web</span><span class="logo__studio logo__studio--inverse">Studio</span>
-                </a>
-                <ul class="page-footer__list">
-                    <li class="page-footer__list-item">
-                        <address class="page-footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
-                    </li>
-                    <li class="page-footer__list-item">
-                        <a href="mailto:info@example.com" class="page-footer__contacts-link">info@devstudio.com</a>
-                    </li>
-                    <li class="page-footer__list-item">
-                        <a href="tel:+380991111111" class="page-footer__contacts-link">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__social">
-                <h3 class="page-footer__title">Приєднуйтесь</h3>
-                <ul class="page-footer__social-list">
-                    <li class="page-footer__social-list-item">
-                        <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="page-footer__social-list-item">
-                        <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="page-footer__social-list-item">
-                        <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="page-footer__social-list-item">
-                        <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--форма футеру-->
-            <div class="page-footer__form">
-                <h3 class="page-footer__title">Підпишіться на розсилку</h3>
-                <form class="page-footer__mail">
-                    <div class="page-footer__thumb">
-                        <input type="email" name="email" class="page-footer__input" placeholder="E-mail">
-                        <button type="submit" class="hero-button page-footer__hero-button">Підписатися
-                        </button>
-                    </div>
-                </form>
-            </div>
+<footer class="page-footer">
+    <div class="container page-footer__container">
+        <div class="page-footer__contacts">
+            <a class="logo page-footer__logo" href="/">
+                <span class="logo__web">Web</span><span class="logo__studio logo__studio--inverse">Studio</span>
+            </a>
+            <ul class="page-footer__list">
+                <li class="page-footer__list-item">
+                    <address class="page-footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
+                </li>
+                <li class="page-footer__list-item">
+                    <a href="mailto:info@example.com" class="page-footer__contacts-link">info@devstudio.com</a>
+                </li>
+                <li class="page-footer__list-item">
+                    <a href="tel:+380991111111" class="page-footer__contacts-link">+38 099 111 11 11</a>
+                </li>
+            </ul>
         </div>
-    </footer>
+        <div class="page-footer__social">
+            <h3 class="page-footer__title">Приєднуйтесь</h3>
+            <ul class="page-footer__social-list">
+                <li class="page-footer__social-list-item">
+                    <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
+                        <svg class="icon-social">
+                            <use href="./images/sprite.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-footer__social-list-item">
+                    <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
+                        <svg class="icon-social">
+                            <use href="./images/sprite.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-footer__social-list-item">
+                    <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
+                        <svg class="icon-social">
+                            <use href="./images/sprite.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-footer__social-list-item">
+                    <a href="https://www.instagram.com/" class="icon-button page-footer__icon-button">
+                        <svg class="icon-social">
+                            <use href="./images/sprite.svg#icon-linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--форма футеру-->
+        <div class="page-footer__form">
+            <h3 class="page-footer__title">Підпишіться на розсилку</h3>
+            <form class="page-footer__mail">
+                <div class="page-footer__thumb">
+                    <input type="email" name="email" class="page-footer__input" placeholder="E-mail">
+                    <button type="submit" class="hero-button page-footer__hero-button">Підписатися
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>
     
     <!--mobile menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">

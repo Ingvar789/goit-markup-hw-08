@@ -1,9 +1,6 @@
-.feature {
-    @extend %container;
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 0;
-    }
-}
+// .feature {
+    
+// }
 .feature__list {
     @extend %list;
     margin: 0 auto;

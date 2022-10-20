@@ -17,7 +17,7 @@
     <!--Шапка + навігація-->
  
     <header class="page-header">
-        <div class="header__container">
+        <div class="container header__container">
             <a class="logo" href="/">
                 <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
             </a>
@@ -61,10 +61,11 @@
     <!--Контент-->
 
     <main>
-        <!-- Основний заголовок-->
         
-        <section class="hero-background">
-            <div class="hero">
+        <!-- Герой-->
+        
+        <section class="hero-background">   
+            <div class="container hero">
                     <h1 class="hero__inscription">
                         <span class="hero__inscription--item">Ефективні рішення для</span>
                         <span class="hero__inscription--item">вашого бізнесу</span>
@@ -75,6 +76,7 @@
 
         <!-- Особливості-->
 
+        <div class="container">
         <section class="feature">
             <ul class="feature__list">
                 <li class="feature__item icon-antena">
@@ -95,13 +97,12 @@
                 </li>
             </ul>
         </section>
-        
+        </div>
 
         <!-- Чим ми займаємося-->
 
-        <section class="our-work">
+        <section class="container our-work">
             <h2 class="our-work__title">Чим ми займаємося</h2>
-
             <ul class="our-work__list">
                 <li class="our-work__item"><img 
                     srcset="images/case1-370.jpg 1x, 
@@ -129,10 +130,11 @@
             </li>
             </ul>
         </section> 
+
         <!-- Наша команда-->
 
         <section class="our-team">
-            <div class="our-team__container">
+            <div class="container our-team__container">
             <h2 class="our-team__title">Наша команда</h2>
             <ul class="our-team__list">
                 <li class="our-team__card">
@@ -321,8 +323,12 @@
                 </li>
             </ul>
             </div>
+            </div>
         </section>
 
+        <!--Постійні клієнти-->
+
+        <div class="container">
         <section class="regular-customers">
             <h2 class="regular-customers__title">Постійні клієнти</h2>
             <ul class="regular-customers__list">
@@ -370,11 +376,12 @@
                 </li>
             </ul>
         </section>
+        </div>
 </main>
         <!-- Футер-->
 
-        <footer class="page-footer">
-            <div class="page-footer__container">
+        <footer class="page-footer"> 
+            <div class="container page-footer__container">
                 <div class="page-footer__contacts">
                 <a class="logo page-footer__logo" href="/">
                     <span class="logo__web">Web</span><span class="logo__studio logo__studio--inverse">Studio</span>

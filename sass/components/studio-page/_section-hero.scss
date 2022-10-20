@@ -50,7 +50,6 @@
 }
 
 .hero {
-    @extend %container;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
             padding-top: 118px;
             padding-bottom: 118px;

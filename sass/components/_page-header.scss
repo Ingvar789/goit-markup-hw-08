@@ -3,7 +3,7 @@
   background-color: $secondary-color;
 }
 .header__container {
-    @extend %container;
+    padding: 0;
     height: 60px;
     display: flex;
     align-items: center;

@@ -1,11 +1,12 @@
+.our-work {
+    padding-top: 0;
+}
 @media (max-width: 1199px) {
     .our-work {
         display: none;
     }
 }
-.our-work {
-    @extend %container;
-}
+
 .our-work__title {
   @extend %title;
   @extend %section-title;

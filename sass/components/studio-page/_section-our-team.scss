@@ -3,9 +3,7 @@
 .our-team {
     background-color: $background-color;
 }
-.our-team__container {
-    @extend %container;
-}
+
 .our-team__title {
     @extend %title;
     @extend %section-title;
