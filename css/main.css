@@ -174,25 +174,25 @@ img {
 }
 @media screen and (max-width: 479px) {
   .container {
-    padding: 60px 15px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
-    padding: 60px 15px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
-    padding: 60px 15px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 94px 15px;
+    padding: 0 15px;
   }
 }
 
@@ -822,6 +822,19 @@ img {
 }
 
 /*studio feature*/
+@media screen and (max-width: 1199px) {
+  .feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .feature__list {
   margin: 0 auto;
 }
@@ -923,8 +936,15 @@ img {
 }
 
 /*studio our work*/
-.our-work {
-  padding-top: 0;
+@media screen and (max-width: 1199px) {
+  .our-work {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-work {
+    padding-bottom: 94px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -975,6 +995,19 @@ img {
 /*фон для команди*/
 .our-team {
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 1199px) {
+  .our-team__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team__list {
@@ -1114,6 +1147,19 @@ img {
 }
 
 /*studio regular customers*/
+@media screen and (max-width: 1199px) {
+  .regular-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .regular-customers__title {
     font-size: 28px;
@@ -1532,6 +1578,19 @@ img {
 }
 
 /*filter buttons*/
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;

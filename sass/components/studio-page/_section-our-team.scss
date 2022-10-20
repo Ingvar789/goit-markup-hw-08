@@ -3,7 +3,17 @@
 .our-team {
     background-color: $background-color;
 }
-
+.our-team__container {
+    @media screen and (max-width: 1199px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
 .our-team__title {
     @extend %title;
     @extend %section-title;
